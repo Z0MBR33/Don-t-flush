@@ -22,7 +22,7 @@ public class HandControlls : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.Space))
         {
             //leftHand.transform.Rotate(Vector3.forward * Time.deltaTime * 3000);
-            leftHand.transform.rotation = Quaternion.Slerp(rotationBeginL, rotationEndL-45, Time.time * speed);
+            //leftHand.transform.rotation = Quaternion.Slerp(rotationBeginL, rotationEndL-45, Time.time * speed);
             //transform.rotation = Quaternion.Lerp(transform.rotation, new Quaternion.Euler(transform.rotation.x, 345f, tramsform.rotation.z), Time.deltaTime * speed);
         }
     }
