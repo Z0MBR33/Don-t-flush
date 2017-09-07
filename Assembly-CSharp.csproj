@@ -51,6 +51,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Fish.cs" />
+     <Compile Include="Assets\Hand.cs" />
+     <Compile Include="Assets\HandRight.cs" />
+     <Compile Include="Assets\Scripts\Controlls.cs" />
      <Compile Include="Assets\Scripts\HandController.cs" />
      <Compile Include="Assets\Scripts\Rotation.cs" />
      <Compile Include="Assets\Scripts\Timer3.cs" />
