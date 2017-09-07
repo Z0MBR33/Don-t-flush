@@ -4,14 +4,16 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class menuScript : MonoBehaviour {
+public class menuScript : MonoBehaviour
+{
 
     public Button startText;
     public Button credits;
     public Button leaveCredits;
     public Canvas CreditCanvas;
 
-    void Start() {
+    void Start()
+    {
         startText = startText.GetComponent<Button>();
         credits = credits.GetComponent<Button>();
         leaveCredits = leaveCredits.GetComponent<Button>();
@@ -22,9 +24,10 @@ public class menuScript : MonoBehaviour {
         CreditCanvas.enabled = true;
     }
 
-    public void StartLevel (){
+    public void StartLevel()
+    {
         SceneManager.LoadScene("test");
-        }
+    }
 
 
     public void creditsPress()
@@ -38,7 +41,8 @@ public class menuScript : MonoBehaviour {
     }
 
     // Update is called once per frame
-    void Update () {
-		
-	}
+    void Update()
+    {
+
+    }
 }

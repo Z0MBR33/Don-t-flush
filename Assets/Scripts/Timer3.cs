@@ -5,51 +5,55 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 
-public class Timer3 : MonoBehaviour {
+public class Timer3 : MonoBehaviour
+{
 
-
+    public bool init;
     public Text timerText;
     private float startTime;
 
 
-    public bool isImgOn;
-    public Image timeRanOut;
+    //public bool isImgOn;
 
 
     // Use this for initialization
-    void Start () {
+    void Start()
+    {
 
-        timeRanOut.enabled = true;
-        isImgOn = true;
+        init = true;
+        //isImgOn = true;
 
-        startTime = Time.time;
-        float u = 100;
-	}
-	
-	// Update is called once per frame
-	void Update () {
+    }
 
+    void Update()
+    {
+        Scene currentScene = SceneManager.GetActiveScene();
 
-
-
-
-        float t = Time.time - startTime;
-
-        string minutes = ((int)t / 60).ToString();
-        string seconds = (t % 60).ToString("f2");
-        
-
-
-        float countDown = 30 - t;
-        string countingDown = countDown.ToString("f2");
-
-
-        timerText.text = countingDown;
-
-        if (countDown  < 27)
+        if (currentScene.name == "test")
         {
-            SceneManager.LoadScene(2);
+            if (init == true)
+            {
+                startTime = Time.time;
+                init = false;
+            }
 
+            float t = Time.time - startTime;
+
+            string minutes = ((int)t / 60).ToString();
+            string seconds = (t % 60).ToString("f2");
+
+            float countDown = 31 - t;
+            string countingDown = countDown.ToString("f2");
+
+            timerText.text = countingDown;
+
+            if (countDown < 27)
+            {
+                SceneManager.LoadScene(2);
+            }
         }
     }
+
 }
+
+
