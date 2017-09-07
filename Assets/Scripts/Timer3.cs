@@ -2,20 +2,37 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
 
 public class Timer3 : MonoBehaviour {
+
 
     public Text timerText;
     private float startTime;
 
-	// Use this for initialization
-	void Start () {
+
+    public bool isImgOn;
+    public Image timeRanOut;
+
+
+    // Use this for initialization
+    void Start () {
+
+        timeRanOut.enabled = true;
+        isImgOn = true;
+
         startTime = Time.time;
         float u = 100;
 	}
 	
 	// Update is called once per frame
 	void Update () {
+
+
+
+
+
         float t = Time.time - startTime;
 
         string minutes = ((int)t / 60).ToString();
@@ -29,6 +46,10 @@ public class Timer3 : MonoBehaviour {
 
         timerText.text = countingDown;
 
+        if (countDown  < 27)
+        {
+            SceneManager.LoadScene(2);
 
-	}
+        }
+    }
 }

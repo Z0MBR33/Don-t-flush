@@ -20,7 +20,6 @@ public class menuScript : MonoBehaviour {
         CreditCanvas = CreditCanvas.GetComponent<Canvas>();
 
         CreditCanvas.enabled = true;
-        
     }
 
     public void StartLevel (){
