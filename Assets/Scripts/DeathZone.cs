@@ -17,7 +17,7 @@ public class DeathZone : MonoBehaviour {
         if ( ring.Equals(collision.gameObject))
         {
             Destroy(ring);
-            SceneManager.LoadScene(5);
+            SceneManager.LoadScene("startscreen");
         }
     }
 	// Update is called once per frame

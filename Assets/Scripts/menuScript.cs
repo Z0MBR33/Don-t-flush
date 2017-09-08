@@ -14,19 +14,19 @@ public class menuScript : MonoBehaviour
 
     void Start()
     {
-        startText = startText.GetComponent<Button>();
+        /*startText = startText.GetComponent<Button>();
         credits = credits.GetComponent<Button>();
         leaveCredits = leaveCredits.GetComponent<Button>();
 
+    */
+       // CreditCanvas = CreditCanvas.GetComponent<Canvas>();
 
-        CreditCanvas = CreditCanvas.GetComponent<Canvas>();
-
-        CreditCanvas.enabled = true;
+       //CreditCanvas.enabled = true;
     }
 
     public void StartLevel()
     {
-        SceneManager.LoadScene("test");
+        SceneManager.LoadScene("Game");
     }
 
 

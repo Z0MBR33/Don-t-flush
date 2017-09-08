@@ -15,7 +15,7 @@ public class WinZone : MonoBehaviour {
 
         if ( ring.Equals(collision.gameObject))
         {
-            SceneManager.LoadScene(4);
+            SceneManager.LoadScene("startscreen");
 
         }
     }
