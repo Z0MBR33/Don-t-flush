@@ -27,7 +27,7 @@ public class HandRight : MonoBehaviour {
                 //transform.Rotate(0, 0, rotationSpeed);
                 
             }
-            if(transform.eulerAngles.z >= maxRotAngle)
+            if(transform.eulerAngles.z >= 70)
             {
                 action = false;
 
