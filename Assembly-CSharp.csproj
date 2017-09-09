@@ -51,6 +51,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\bubbles.cs" />
+     <Compile Include="Assets\Scripts\bubbleSpawn.cs" />
      <Compile Include="Assets\Scripts\CameraFollow.cs" />
      <Compile Include="Assets\Scripts\Controlls.cs" />
      <Compile Include="Assets\Scripts\DeathZone.cs" />
@@ -59,9 +61,12 @@
      <Compile Include="Assets\Scripts\HandController.cs" />
      <Compile Include="Assets\Scripts\HandRight.cs" />
      <Compile Include="Assets\Scripts\menuScript.cs" />
+     <Compile Include="Assets\Scripts\MiniCamera.cs" />
      <Compile Include="Assets\Scripts\Rotation.cs" />
+     <Compile Include="Assets\Scripts\ScoreOnCollision.cs" />
      <Compile Include="Assets\Scripts\Timer3.cs" />
      <Compile Include="Assets\Scripts\WinZone.cs" />
+     <Compile Include="Assets\WaterScreen.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
